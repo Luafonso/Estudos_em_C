@@ -1,0 +1,3 @@
+/home/luisafonso/Desenvolvimento/C/exercico1/cmake-build-debug/CMakeFiles/exercico1.dir
+/home/luisafonso/Desenvolvimento/C/exercico1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/luisafonso/Desenvolvimento/C/exercico1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
