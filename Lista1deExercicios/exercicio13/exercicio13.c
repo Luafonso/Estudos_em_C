@@ -1,14 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    float segundos;
+    int segundos;
+    const int SEGUNDOS_EM_UMA_HORA = 3600;
+    const int SEGUNDOS_EM_UM_MINUTO = 60;
 
     printf("Digite os segundos: \n");
-    scanf("%f", &segundos);
+    scanf("%d", &segundos);
 
-    float minutos = segundos/60;
-    float horas = minutos/60;
+    int horas = segundos / SEGUNDOS_EM_UMA_HORA;
+    segundos = segundos - (horas * SEGUNDOS_EM_UMA_HORA);
 
-    printf("Horas: %.2f, Minutos: %.2f, Segundos: %.2f", horas, minutos, segundos);
+    int minutos = segundos / SEGUNDOS_EM_UM_MINUTO;
+    segundos = segundos - (minutos * SEGUNDOS_EM_UM_MINUTO);
+
+    printf("%d:%d:%d", horas, minutos, segundos);
     return 0;
 }
