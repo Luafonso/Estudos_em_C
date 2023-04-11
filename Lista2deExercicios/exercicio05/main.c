@@ -2,11 +2,13 @@
 
 int main() {
     int numero;
+    int operacao;
 
     printf("Digite um número: [Entre 100 a 999]\n");
     scanf("%d", &numero);
+    operacao = numero/100;
 
-    if((numero >= 200 && numero < 300) ||(numero >= 400 && numero < 500) || (numero >= 600 && numero < 700) || (numero >= 800 && numero < 900)){
+    if(operacao%2 == 0){
         printf("A centena de %d é par\n", numero);
     }
     else{
